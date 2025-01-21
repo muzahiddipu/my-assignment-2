@@ -4,18 +4,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 .quicksand-font {
-  font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  overflow-y: auto;
- 
- 
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    overflow-y: auto;
+    width: 100%;
+
+
 }
 
 /* shared styles are here */
-.display-flex{
+.display-flex {
     display: flex;
     margin: 0px 140px;
     justify-content: space-between;
@@ -23,191 +37,259 @@
 }
 
 /* header section styles here */
-.navbar{
-   margin-left: auto;
-   
+.menu{
+    display: none;
+}
+.navbar {
+    margin-left: auto;
+
 }
 
-.school{
+.school {
     align-items: center;
 }
-.nav-school{
+
+.nav-school {
     font-size: 2rem;
     font-weight: 700;
 }
-ul{
+
+ul {
     list-style: none;
     gap: 2rem;
 }
+
 .home,
 .about,
 .facilities,
-.admission{
+.admission {
     font-size: 1.1rem;
     font-weight: 700;
 }
-.home{
+
+.home {
     color: #FEA301;
 }
-.about{
+
+.about {
     color: #01ACFD;
 
 }
-.facilities{
+
+.facilities {
     color: #05D4DF;
 }
-.admission{
+
+.admission {
     color: #5D58EF;
 }
-.header-btn{
+
+.header-btn {
+    font-size: 1.25rem;
+    font-weight: 700;
     border: none;
     padding: 16px 60.5px;
     border-radius: 12px;
     color: #FFFFFF;
     background-color: #FEA301;
 }
-.hambarger-img{
+
+/* .hambarger-img {
     display: none;
-}
-.empowering-header{
+} */
+
+.empowering-header {
+    margin-bottom: 24px;
     font-size: 3.5rem;
     font-weight: 700;
 }
-.span1{
+
+.span1 {
     color: #FEA301;
 }
-.span2{
+
+.span2 {
     color: #01ACFD;
 }
-.para-with{
+
+.para-with {
     font-size: 1.2rem;
 }
-.enroll-btn{
+
+.enroll-btn {
+   margin-top: 24px;
+    font-size: 1.25rem;
+    font-weight: 700;
     background-color: black;
     border: none;
-    padding: 16px 60.5px;
+    padding: 16px 16px;
     border-radius: 12px;
     color: #FFFFFF;
 
 }
+
 /* standared carriculum styles here */
-.standard-carriculam{
-   background-image: url(../assets/bg.png);
-   
+.standard-carriculam {
+    background-image: url(../assets/bg.png);
+    
+
 }
-.std-carriculum{
+
+.std-carriculum {
     text-align: center;
     font-size: 2.875rem;
     font-weight: 700;
     margin-top: 60px;
 }
+
 .kinder-header,
 .elementary-header,
-.middle-header{
+.middle-header {
     font-size: 1.56rem;
     font-weight: 700;
 }
+
 .kinder-para,
 .elementary-para,
-.middle-para{
+.middle-para {
     font-size: 1rem;
     color: #808080;
 }
-.rm1{
+
+.rm1 {
     color: #64C8FF;
 }
-.rm2{
+
+.rm2 {
     color: #F0AA00;
 }
-.rm3{
+
+.rm3 {
     color: #8700FF;
 }
 
-.card-container{
-    display: grid;
+.card-container {
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0px 140px;
-    justify-content: space-evenly;
+   justify-content: space-between;
     align-items: center;
-    width: 100%;
-    margin-top: 80px;
-    
-   
+    width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 80px 140px 0px 140px;
+
+
 }
-.card1{
+
+.card1 {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    row-gap: 30px;
     justify-content: center;
     align-items: center;
     /* border: 2px solid #01ACFD; */
     border-radius: 20px;
-    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.253);
-    padding: 8px;
-    height: 500px;
-    width: 400px;
+    box-shadow: 3px 5px 5px rgba(211, 211, 211, 0.651);
+    padding: 40px;
+    /* height: 500px;
+    width: 400px; */
     background: linear-gradient(to top, white, #DEF5FF);
 }
-.card2{
+
+.card2 {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    row-gap: 30px;
     justify-content: center;
     align-items: center;
     /* border: 2px solid #01ACFD; */
-    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.253);
+    box-shadow: 3px 5px 5px rgba(211, 211, 211, 0.651);
     border-radius: 20px;
-    padding: 8px;
-    height: 500px;
-    width: 400px;
+    padding: 40px;
+    /* height: 500px;
+    width: 400px; */
     background: linear-gradient(to top, white, #FFF4DC);
 }
-.card3{
+
+.card3 {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    row-gap: 30px;
     justify-content: center;
     align-items: center;
     /* border: 2px solid #01ACFD; */
-    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.253);
+    box-shadow: 3px 5px 5px rgba(211, 211, 211, 0.651);
     border-radius: 20px;
-    padding: 8px;
-    height: 500px;
-    width: 400px;
+    padding: 40px;
+    /* height: 500px;
+    width: 400px; */
     background: linear-gradient(to top, white, #F2E8FF);
 }
-.img-container{
+
+.img-container {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     gap: 10px;
     margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+/* our stories styles here */
+.stories-container{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.stories-reaminig{
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    gap: 24px;
+}
+.story-1{
+    border: 2px solod #FEA301 !important;
+   border-radius: 16px;
+  
 }
 
 /* responsiveness for mobile */
 @media screen and (max-width:576px) {
+
     .nav-school,
     .home,
     .about,
     .facilities,
     .admission,
-    .header-btn{
+    .header-btn {
         display: none;
+
+    }
+    .menu{
+        display: block;
+    }
+
+    .header{
+        border: 2px solid #FEA301;
+      
        
     }
-    .navbar{
-        border-bottom: 2px solid #FEA301;
-        width: 100%;
-        
-    }
-    .hambarger-img{
+
+    /* .hambarger-img {
         display: block;
-       width: 100%;
-    }
-    .empowering{
+        width: 100%;
+    } */
+
+    .empowering {
         flex-direction: column-reverse;
-     
+
     }
-    .header{
+
+    .header {
         justify-content: center;
         margin: 0px 16px;
     }
-    
+
 }
