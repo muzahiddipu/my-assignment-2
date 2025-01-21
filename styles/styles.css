@@ -1,3 +1,6 @@
+/* univesal styles here */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 
@@ -6,10 +9,15 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  overflow-y: auto;
+ 
+ 
 }
+
 /* shared styles are here */
 .display-flex{
-    display: flex;margin: 0px 140px;
+    display: flex;
+    margin: 0px 140px;
     justify-content: space-between;
     align-items: center;
 }
@@ -58,6 +66,9 @@ ul{
     color: #FFFFFF;
     background-color: #FEA301;
 }
+.hambarger-img{
+    display: none;
+}
 .empowering-header{
     font-size: 3.5rem;
     font-weight: 700;
@@ -78,4 +89,125 @@ ul{
     border-radius: 12px;
     color: #FFFFFF;
 
+}
+/* standared carriculum styles here */
+.standard-carriculam{
+   background-image: url(../assets/bg.png);
+   
+}
+.std-carriculum{
+    text-align: center;
+    font-size: 2.875rem;
+    font-weight: 700;
+    margin-top: 60px;
+}
+.kinder-header,
+.elementary-header,
+.middle-header{
+    font-size: 1.56rem;
+    font-weight: 700;
+}
+.kinder-para,
+.elementary-para,
+.middle-para{
+    font-size: 1rem;
+    color: #808080;
+}
+.rm1{
+    color: #64C8FF;
+}
+.rm2{
+    color: #F0AA00;
+}
+.rm3{
+    color: #8700FF;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px 140px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    
+   
+}
+.card1{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid #01ACFD; */
+    border-radius: 20px;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.253);
+    padding: 8px;
+    height: 500px;
+    width: 400px;
+    background: linear-gradient(to top, white, #DEF5FF);
+}
+.card2{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid #01ACFD; */
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.253);
+    border-radius: 20px;
+    padding: 8px;
+    height: 500px;
+    width: 400px;
+    background: linear-gradient(to top, white, #FFF4DC);
+}
+.card3{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid #01ACFD; */
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.253);
+    border-radius: 20px;
+    padding: 8px;
+    height: 500px;
+    width: 400px;
+    background: linear-gradient(to top, white, #F2E8FF);
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    margin-top: 80px;
+}
+
+/* responsiveness for mobile */
+@media screen and (max-width:576px) {
+    .nav-school,
+    .home,
+    .about,
+    .facilities,
+    .admission,
+    .header-btn{
+        display: none;
+       
+    }
+    .navbar{
+        border-bottom: 2px solid #FEA301;
+        width: 100%;
+        
+    }
+    .hambarger-img{
+        display: block;
+       width: 100%;
+    }
+    .empowering{
+        flex-direction: column-reverse;
+     
+    }
+    .header{
+        justify-content: center;
+        margin: 0px 16px;
+    }
+    
 }
