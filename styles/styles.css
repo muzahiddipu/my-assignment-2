@@ -1,6 +1,19 @@
 /* univesal styles here */
+/* Raleway font */
 
 
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.raleway-font{
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+} */
+
+/* Quicksand font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 
@@ -8,7 +21,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 body {
@@ -37,9 +50,10 @@ body {
 }
 
 /* header section styles here */
-.menu{
+.menu {
     display: none;
 }
+
 .navbar {
     margin-left: auto;
 
@@ -117,7 +131,7 @@ ul {
 }
 
 .enroll-btn {
-   margin-top: 24px;
+    margin-top: 40px;
     font-size: 1.25rem;
     font-weight: 700;
     background-color: black;
@@ -131,7 +145,7 @@ ul {
 /* standared carriculum styles here */
 .standard-carriculam {
     background-image: url(../assets/bg.png);
-    
+
 
 }
 
@@ -239,20 +253,128 @@ ul {
 }
 
 /* our stories styles here */
-.stories-container{
+.our-stories {
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.856), #FFF4DC), 
+    url(../assets/bg.png); */
+    background-image: url(../assets/bg.png), linear-gradient(to bottom, rgba(255, 255, 255, 0.856), #f5dca7);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.stories-heading {
+    text-align: center;
+    font-size: 2.875rem;
+    font-weight: 700;
+}
+
+.stories-container {
     display: flex;
     flex-direction: row;
     gap: 24px;
+    margin: 80px 140px 80px 140px;
 }
-.stories-reaminig{
+
+.stories-reaminig {
     display: grid;
     grid-template-columns: repeat(2, 0.5fr);
     gap: 24px;
+    width: 50%;
 }
-.story-1{
-    border: 2px solod #FEA301 !important;
-   border-radius: 16px;
-  
+
+.story-1,
+.story-2,
+.story-3,
+.story-4,
+.story-5 {
+    /* border: 2px solid #FEA301; */
+    border-radius: 16px;
+    background-color: white;
+
+}
+
+.story-1 {
+    /* display: flex;
+    flex-direction: column; */
+    gap: 16px;
+    /* padding: 40px; */
+    width: 50%;
+    overflow: hidden;
+}
+.story-btn-1 {
+    background-color: #3CD8E8;
+    border-radius: 48px;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border: none;
+    color: white;
+    position: relative;
+    top: -30px;
+
+}
+
+.story-1-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-bottom: 32px;
+}
+
+.story-1-para {
+    margin-left: 30px;
+    margin-bottom: 32px;
+}
+.story-2,
+.story-3,
+.story-4,
+.story-5 {
+    overflow: hidden;
+}
+.story-small-header{
+    font-weight: 700;
+    margin-left: 40px;
+    margin-bottom: 32px;
+}
+button{
+    background-color: #95B226;
+    border-radius: 48px;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border: none;
+    color: white;
+    position: relative;
+    top: -30px; 
+}
+.story-btn-3{
+    background-color: #5D58F0;
+    border-radius: 48px;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border: none;
+    color: white;
+    position: relative;
+    top: -30px; 
+}
+.view-btn-div {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.view-btn {
+    align-items: center;
+    padding: 10px 60px;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+/* footer section styles here */
+.footer-section{
+    padding: 125px 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #01ACFD;
 }
 
 /* responsiveness for mobile */
@@ -267,14 +389,15 @@ ul {
         display: none;
 
     }
-    .menu{
+
+    .menu {
         display: block;
     }
 
-    .header{
+    .header {
         border: 2px solid #FEA301;
-      
-       
+
+
     }
 
     /* .hambarger-img {
