@@ -146,6 +146,15 @@ ul {
     color: #FFFFFF;
 
 }
+.marquee{
+    /* border: 1px solid black; */
+    background-color: rgb(13, 255, 13);
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    direction: right;
+    
+}
+
 
 /* standared carriculum styles here */
 .standard-carriculam {
