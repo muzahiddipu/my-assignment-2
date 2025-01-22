@@ -97,7 +97,11 @@ ul {
 .admission {
     color: #5D58EF;
 }
-
+.header-button{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
 .header-btn {
     font-size: 1.25rem;
     font-weight: 700;
@@ -376,7 +380,43 @@ button{
     justify-content: space-between;
     background-color: #01ACFD;
 }
-
+.footer-icon-heading{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+.nav-school{
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+.footer-para{
+    color: white;
+    font-size: 20px;
+    margin-top: 25px;
+}
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.about-school,
+.keep-in-touch{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+.footer-fb{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.footer-images{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
 /* responsiveness for mobile */
 @media screen and (max-width:576px) {
 
