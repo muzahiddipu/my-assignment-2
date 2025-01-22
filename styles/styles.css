@@ -50,7 +50,7 @@ body {
 }
 
 /* header section styles here */
-.menu {
+.menubar {
     display: none;
 }
 
@@ -66,6 +66,7 @@ body {
 .nav-school {
     font-size: 2rem;
     font-weight: 700;
+    color: black;
 }
 
 ul {
@@ -101,6 +102,7 @@ ul {
     margin-top: 40px;
     display: flex;
     align-items: center;
+    margin-right: 0px;
 }
 .header-btn {
     font-size: 1.25rem;
@@ -110,6 +112,7 @@ ul {
     border-radius: 12px;
     color: #FFFFFF;
     background-color: #FEA301;
+   
 }
 
 /* .hambarger-img {
@@ -396,8 +399,8 @@ button{
     
     align-items: center;
 }
-.nav-school{
-    color: white;
+.foot-school{
+   color: white;
     font-size: 32px;
     font-weight: 700;
 }
@@ -429,7 +432,47 @@ button{
 }
 /* responsiveness for mobile */
 @media screen and (max-width:576px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    
+    }
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    .bag-header{
+        margin-left: 0px;
+    }
+    /* .menubar{
+        display: block;
+        margin-left: 0px;
+        margin-right: 50px;
+    } */
 
+    .header {
+        border-bottom: 1px solid #F0AA00;
+        width: 100%;
+    }
+
+    /* .hambarger-img {
+        display: block;
+        width: 100%;
+    } */
+
+    .empowering{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    .header {
+        justify-content: center;
+        /* margin: 0px 16px; */
+    }
     .nav-school,
     .home,
     .about,
@@ -439,30 +482,44 @@ button{
         display: none;
 
     }
-
-    .menu {
-        display: block;
+    .school{
+        margin-left: 0;
     }
-
-    .header {
-        border: 2px solid #FEA301;
-
-
+    /* .navbar{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 10px; */
+    .navbar{
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
     }
-
-    /* .hambarger-img {
-        display: block;
-        width: 100%;
-    } */
-
-    .empowering {
-        flex-direction: column-reverse;
-
-    }
-
-    .header {
+    /* standard carriculam here */
+    .standard-carriculam{
+        display: flex;
+        margin: 0px;
+        flex-direction: column;
         justify-content: center;
-        margin: 0px 16px;
+        align-items: center;
+        width: 100%;
+
+    }
+    .story-1{
+        display: none;
+    }
+    .stories-container{
+        width: 100vh;
+        margin: 0px;
+        display: grid;
+        grid-template-rows: repeat(2, 0.5fr);
+    }
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+
     }
 
-}
+
+    }
+    
+
